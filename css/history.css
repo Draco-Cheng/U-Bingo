@@ -1,0 +1,92 @@
+#leftHistory,
+#rightHistory {
+  position: absolute;
+  color: white;
+  height: 100%;
+}
+
+#leftHistory {
+  -webkit-writing-mode: vertical-lr;
+  writing-mode: vertical-lr;
+}
+
+#rightHistory {
+  -webkit-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+}
+
+#leftHistory {
+  left: 0px;
+}
+
+#rightHistory {
+  right: 0px;
+}
+
+.historyCol {
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  font-size: 35px;
+  border-radius: 35px;
+  display: inline-block;
+  border-color: white;
+  border-style: solid;
+  border-width: 1px;
+  text-align: center;
+  box-shadow: 0px 0px 10px 0px rgba(0, 131, 255, 0.63), inset 0px 0px 10px 0px rgba(0, 131, 255, 0.63);
+  margin-top: 7px;
+  -webkit-animation: historyColAnimation 2s linear infinite;
+  /* Chrome, Safari, Opera */
+  animation: historyColAnimation 2s linear infinite;
+}
+
+#leftHistory .historyCol {
+  margin-left: 5px;
+}
+
+#rightHistory .historyCol {
+  margin-right: 5px;
+}
+
+.historyColText {
+  -webkit-writing-mode: initial;
+  writing-mode: initial;
+}
+
+@-webkit-keyframes historyColAnimation {
+  0% {
+    text-shadow: 0px 0px 01px rgba(0, 131, 255, 0.63), 0px 0px 17px rgba(0, 131, 255, 0.63);
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  70% {
+    text-shadow: 0px 0px 01px rgba(0, 255, 0, 1), 0px 0px 17px rgba(0, 255, 0, 1), 0px 0px 17px black;
+  }
+  100% {
+    text-shadow: 0px 0px 01px rgba(0, 131, 255, 0.63), 0px 0px 17px rgba(0, 131, 255, 0.63);
+    opacity: 1;
+  }
+}
+
+
+/* Standard syntax */
+
+@keyframes historyColAnimation {
+  0% {
+    text-shadow: 0px 0px 01px rgba(0, 131, 255, 0.63), 0px 0px 17px rgba(0, 131, 255, 0.63);
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  70% {
+    text-shadow: 0px 0px 01px rgba(0, 255, 0, 1), 0px 0px 17px rgba(0, 255, 0, 1), 0px 0px 17px black;
+  }
+  100% {
+    text-shadow: 0px 0px 01px rgba(0, 131, 255, 0.63), 0px 0px 17px rgba(0, 131, 255, 0.63);
+    opacity: 1;
+  }
+}

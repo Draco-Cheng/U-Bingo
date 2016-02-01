@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html>
+<!--<![endif]-->
+
+<head>
+  <meta charset="UTF-8">
+  <title>BinGo</title>
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/loading.css">
+  <link rel="stylesheet" href="css/history.css">
+</head>
+
+<body id="playPanel">
+  <div id="content">
+    <div id="leftHistory"></div>
+    <div id="rightHistory"></div>
+    <div class="content-table">
+      <div class="content-td">
+        <div id="loading-logo"></div>
+        <div id="loading-wrap" class="idle">
+          <div id="loading-circle" class="selectable">
+            <div class="loading-animation-block">
+              <div class="loading-block block-1"></div>
+              <div class="loading-block block-2"></div>
+              <div class="loading-block block-3"></div>
+              <div class="loading-block block-4"></div>
+            </div>
+            <div id="loading-text">
+              <div id="loading-btn-start">GO</div>
+              <div id="loading-btn-progress"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
