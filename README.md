@@ -17,4 +17,4 @@ setting (config)
 ```
 
 
-PS: press Space and Enter can start one draw
+PS: press Space and Enter can start/stop drawing
